@@ -1,0 +1,198 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 1900px) {
+}
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .hero-section .about-texts h1 {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .toggle-btn {
+    display: block;
+  }
+  .main-menu {
+    position: fixed;
+    right: -300px;
+    top: 0;
+    width: 280px;
+    background-color: var(--gray);
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: all 0.8s ease;
+  }
+  .main-menu.active {
+    right: 0px;
+  }
+
+  .header .main-menu ul {
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    padding-top: 50px;
+  }
+
+  .header .main-menu ul li {
+    display: block;
+    width: 100%;
+  }
+
+  .header .main-menu ul li a:after, .header .main-menu ul li.active a:after,.header .main-menu ul li:last-child.active a:after {
+    left: 25px;
+  }
+
+  .header .main-menu ul li a {
+    color: var(--offwhite);
+  }
+  .header .main-menu .toggle-btn {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+  }
+
+  .toggle-btn.close-btn img {
+    max-width: 25px;
+  }
+  .help-texts .btns span {
+    display: block;
+  }
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section .profile-picture {
+    text-align: center;
+  }
+  .single-service.project {
+    grid-template-columns: 1fr 200px;
+  }
+  .section-block {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+  .container,
+  .container.main {
+    grid-template-rows: 1fr;
+  }
+  .header {
+    padding: 25px 0px;
+  }
+  .hero-section {
+    grid-template-columns: 1fr;
+    padding: 30px 0px;
+  }
+
+  .hero-section .profile-picture {
+    text-align: center;
+  }
+  .hero-section .profile-picture img {
+    max-width: 200px;
+  }
+
+  .hero-section .about-texts h1 {
+    font-size: 28px;
+  }
+  .hero-section .about-texts p {
+    font-size: 16px;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer .footer-menu ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .footer .footer-menu ul li a {
+    padding: 5px;
+  }
+
+  .footer {
+    padding-top: 50px;
+    font-size: 15px;
+  }
+  .primary-btn {
+    display: block;
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 18px;
+  }
+  .section-block h1 {
+    font-size: 26px;
+  }
+
+  .section-block {
+    font-size: 16px;
+    padding: 50px 0px;
+    grid-template-columns: 1fr;
+  }
+
+  .help-texts .btns .primary-btn {
+    margin: 0px;
+  }
+
+  .help-texts .btns {
+    text-align: center;
+  }
+
+  .section-block h4 {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .section-block .single-service h1 {
+    font-size: 22px;
+  }
+  .single-service.project {
+    grid-template-columns: 1fr;
+  }
+
+  .single-service .date {
+    order: 1;
+    text-align: left;
+  }
+
+  .single-service .content {
+    order: 2;
+  }
+  .single-service.project:first-of-type .date {
+    margin-top: 0px;
+  }
+  .form-group label {
+    font-size: 16px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 16px;
+  }
+
+  .form-group textarea {
+    min-height: 150px;
+  }
+
+  .section-block.contact .help-texts {
+    padding-bottom: 0px;
+  }
+  .section-block h2 {
+    font-size: 16px;
+  }
+}
